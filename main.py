@@ -11,8 +11,9 @@ def main():
     print("2. PnL Calculator")
     print("3. Leverage Simulator")
     print("4. Trade Summary")
+    print("q. Quit")
 
-    choice = input("Enter choice (1-4): ")
+    choice = input("Enter choice (1-4 or q): ")
 
     if choice == "1":
         print("Running Percent Return...")
@@ -22,6 +23,9 @@ def main():
         print("Running Leverage Simulator...")
     elif choice == "4":
         print("Running Trade Summary...")
+    elif choice.lower() == "q":
+        print("Exiting Tah Trading AI Lab. Stay sharp.")
+        return
     else:
         print("Invalid choice")
 
